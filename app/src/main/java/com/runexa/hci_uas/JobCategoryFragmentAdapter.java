@@ -11,11 +11,11 @@ import android.widget.ImageView;
  * Created by richi on 11/11/2016.
  */
 
-public class HomeFragmentAdapter extends BaseAdapter {
+public class JobCategoryFragmentAdapter extends BaseAdapter {
 
     private Context mContext;
 
-    public HomeFragmentAdapter(Context c) {
+    public JobCategoryFragmentAdapter(Context c) {
         mContext = c;
     }
 

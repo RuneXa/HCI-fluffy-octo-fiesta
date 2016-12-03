@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         FragmentManager fm = getSupportFragmentManager();
-        fm.beginTransaction().replace(R.id.frame_main,new HomeFragment()).commit();
+        fm.beginTransaction().replace(R.id.frame_main,new JobListFragment()).commit();
     }
 
     @Override
