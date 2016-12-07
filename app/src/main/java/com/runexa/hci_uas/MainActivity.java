@@ -13,9 +13,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    FragmentManager fm = getSupportFragmentManager();
+    int frame = R.id.frame_main;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,8 +37,7 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        FragmentManager fm = getSupportFragmentManager();
-        fm.beginTransaction().replace(R.id.frame_main,new JobListFragment()).commit();
+        fm.beginTransaction().replace(frame,new HomeFragment()).commit();
     }
 
     @Override
@@ -75,18 +78,18 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+        if (id == R.id.nav_home) {
+            fm.beginTransaction().replace(frame,new HomeFragment()).commit();
+        } else if (id == R.id.nav_applied) {
+            fm.beginTransaction().replace(frame,new JobListFragment()).commit();
+        } else if (id == R.id.nav_category) {
+            fm.beginTransaction().replace(frame,new JobCategoryFragment()).commit();
+        } else if (id == R.id.nav_cv) {
+            fm.beginTransaction().replace(frame,new CVFragment()).commit();
+        } else if (id == R.id.nav_help) {
+            Toast.makeText(this,"Not Implemented",Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.nav_logout) {
+            Toast.makeText(this,"Not Implemented",Toast.LENGTH_SHORT).show();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.runexa.hci_uas.HomeFragment">
+
+
+    <ImageView
+        android:clickable="true"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:id="@+id/home_daftar"
+        android:src="@drawable/daftar_kerja_360x360"
+        android:layout_marginStart="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="52dp" />
+
+    <ImageView
+        android:clickable="true"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:id="@+id/home_cv"
+        android:src="@drawable/ubah_cv_360x360"
+        android:layout_marginTop="99dp"
+        android:layout_alignTop="@+id/home_daftar"
+        android:layout_toEndOf="@+id/home_daftar" />
+
+    <ImageView
+        android:clickable="true"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:id="@+id/home_list"
+        android:src="@drawable/daftar_terkirim_360x360"
+        android:layout_below="@+id/home_daftar"
+        android:layout_toStartOf="@+id/home_cv"
+        android:layout_marginTop="54dp" />
+
+    <ImageView
+        android:clickable="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:id="@+id/home_option"
+        android:src="@drawable/pengaturan_360x360"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

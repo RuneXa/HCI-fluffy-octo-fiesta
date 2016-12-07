@@ -3,34 +3,36 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home_128x128"
             android:title="Home" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
+            android:id="@+id/nav_category"
+            android:icon="@drawable/job_category_128x128"
             android:title="Job Category" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:id="@+id/nav_cv"
+            android:icon="@drawable/cv_128x128"
             android:title="Curriculum Vitae" />
         <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
+            android:id="@+id/nav_applied"
+            android:icon="@drawable/job_applied_128x128"
             android:title="Job Applied" />
     </group>
+    
+    <group>
 
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Logout" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Bantuan" />
-        </menu>
-    </item>
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout_128x128"
+            android:title="Keluar" />
+
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/help_128x128"
+            android:title="Bantuan" />
+
+    </group>
+
 
 </menu>

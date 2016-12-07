@@ -37,7 +37,7 @@ public class JobCategoryFragmentAdapter extends BaseAdapter {
         if (convertView == null) {
             // if it's not recycled, initialize some attributes
             imageView = new ImageView(mContext);
-            imageView.setLayoutParams(new GridView.LayoutParams(85, 85));
+            imageView.setLayoutParams(new GridView.LayoutParams(300, 300));
             imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
             imageView.setPadding(8, 8, 8, 8);
         } else {
@@ -51,10 +51,14 @@ public class JobCategoryFragmentAdapter extends BaseAdapter {
 
     // references to our images
     private Integer[] mThumbIds = {
-        R.drawable.ic_menu_camera,
-            R.drawable.ic_menu_camera,
-            R.drawable.ic_menu_camera,
-            R.drawable.ic_menu_camera,
-            R.drawable.ic_menu_camera
+            R.drawable.ilmu_hayati_360x360,
+            R.drawable.information_technology_360x360,
+            R.drawable.jurnalisme_360x360,
+            R.drawable.komunikasi_digital_360x360,
+            R.drawable.kuliner_360x360,
+            R.drawable.pekerjaan_kantor_360x360,
+            R.drawable.pendidikan_360x360,
+            R.drawable.seni_360x360,
+            R.drawable.teknik_mesin_360x360
     };
 }

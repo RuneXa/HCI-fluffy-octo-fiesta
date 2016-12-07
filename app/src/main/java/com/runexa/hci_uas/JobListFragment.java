@@ -20,8 +20,7 @@ public class JobListFragment extends Fragment {
     private RecyclerView.LayoutManager mLayoutManager;
 
     private String[] myDataset = {
-            "woi",
-            "woi2"
+        "List1","List2"
     };
 
     public JobListFragment() {
