@@ -10,16 +10,23 @@
     tools:context="com.runexa.hci_uas.StartActivity">
 
     <Button
-        android:id="@+id/start_button"
+        android:id="@+id/start_button_register"
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Mulai"/>
+        android:text="Daftar"/>
+
+    <Button
+        android:id="@+id/start_button_login"
+        android:layout_above="@+id/start_button_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masuk"/>
 
     <android.support.v4.view.ViewPager
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/start_pager"
-        android:layout_above="@+id/start_button"
+        android:layout_above="@+id/start_button_login"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
