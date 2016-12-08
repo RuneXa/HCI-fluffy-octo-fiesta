@@ -32,7 +32,7 @@ public class JobCategoryFragmentAdapter extends BaseAdapter {
     }
 
     // create a new ImageView for each item referenced by the Adapter
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(int position, View convertView, final ViewGroup parent) {
         ImageView imageView;
         if (convertView == null) {
             // if it's not recycled, initialize some attributes
@@ -45,6 +45,7 @@ public class JobCategoryFragmentAdapter extends BaseAdapter {
         }
 
         imageView.setImageResource(mThumbIds[position]);
+
         return imageView;
 
     }

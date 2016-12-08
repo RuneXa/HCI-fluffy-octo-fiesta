@@ -5,6 +5,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 /**
@@ -13,10 +14,10 @@ import android.widget.TextView;
 
 public class JobListFragmentAdapter extends RecyclerView.Adapter<JobListFragmentAdapter.ViewHolder> {
 
-   private String[] mDataset;
+   private mDataset[] mDataset;
 
     // Provide a suitable constructor (depends on the kind of dataset)
-    public JobListFragmentAdapter(String[] myDataset) {
+    public JobListFragmentAdapter(mDataset[] myDataset) {
         mDataset = myDataset;
     }
 
@@ -38,7 +39,11 @@ public class JobListFragmentAdapter extends RecyclerView.Adapter<JobListFragment
     public void onBindViewHolder(ViewHolder holder, int position) {
         // - get element from your dataset at this position
         // - replace the contents of the view with that element
-        holder.vName.setText(mDataset[position]);
+
+        holder.vTitle.setText(mDataset[position].title);
+        holder.vPos.setText(mDataset[position].position);
+        holder.vAddress.setText(mDataset[position].address);
+        holder.vEmail.setText(mDataset[position].email);
 
     }
 
@@ -47,13 +52,22 @@ public class JobListFragmentAdapter extends RecyclerView.Adapter<JobListFragment
     // you provide access to all the views for a data item in a view holder
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
-        protected TextView vName;
+        protected TextView vTitle;
+        protected TextView vPos;
+        protected TextView vAddress;
+        protected TextView vEmail;
+        protected ImageView vImage;
+
 
         // each data item is just a string in this case
         public CardView mCardView;
         public ViewHolder(CardView v) {
             super(v);
-            vName = (TextView) v.findViewById(R.id.info_text);
+            vTitle = (TextView) v.findViewById(R.id.info_text_title);
+            vPos = (TextView) v.findViewById(R.id.info_job_PH);
+            vAddress = (TextView) v.findViewById(R.id.info_contact_address_PH);
+            vEmail = (TextView) v.findViewById(R.id.info_contact_email_PH);
+            vImage = (ImageView) v.findViewById(R.id.info_image);
             mCardView = v;
         }
     }

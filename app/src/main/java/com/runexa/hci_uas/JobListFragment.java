@@ -19,8 +19,15 @@ public class JobListFragment extends Fragment {
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
 
-    private String[] myDataset = {
-        "List1","List2"
+    private mDataset[] myDataset = {
+            new mDataset("Lecturer at SU","Lecturer","aaa@aaaa.aa","Disini"),
+            new mDataset("Not Lecturer at SU","Not Lecturer","aaa@aaaa.aa","Disini"),
+            new mDataset("Certainly Not Lecturer at SU","Another","aaa@aaaa.aa","Disini"),
+            new mDataset("Internship at ship","Ship wrecker","aaa@aaaa.aa","Disanaaaaaaaaaaaaaaaaaaaaaaaaa"),
+            new mDataset("aaa","asb","aaa@aaaa.ab","Di"),
+            new mDataset("bbb","asd","aaa@aaaa.ac","sini"),
+            new mDataset("ccc","ase","aaa@aaaa.ad","isin"),
+
     };
 
     public JobListFragment() {

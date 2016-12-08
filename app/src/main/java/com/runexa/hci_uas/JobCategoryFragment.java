@@ -3,9 +3,11 @@ package com.runexa.hci_uas;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.GridView;
 
 public class JobCategoryFragment extends Fragment {
@@ -28,6 +30,15 @@ public class JobCategoryFragment extends Fragment {
         GridView gv = (GridView) v.findViewById(R.id.jobCategory_gridview);
         gv.setAdapter(new JobCategoryFragmentAdapter(this.getContext()));
 
+        final ViewGroup frame = container;
+
+        gv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                getFragmentManager().beginTransaction().replace(frame.getId(),new JobListFragment()).commit();
+            }
+        });
+
         return v;
     }
 
@@ -42,5 +53,6 @@ public class JobCategoryFragment extends Fragment {
     public void onDetach() {
         super.onDetach();
     }
+
 
 }
