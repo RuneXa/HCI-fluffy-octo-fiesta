@@ -25,18 +25,11 @@ public class JobListFragmentAdapter extends RecyclerView.Adapter<JobListFragment
     // Create new views (invoked by the layout manager)
     @Override
     public JobListFragmentAdapter.ViewHolder onCreateViewHolder(ViewGroup parent,
-                                                   int viewType) {
+                                                                final int viewType) {
         // create a new view
         View v = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.card_job_list, parent, false);
         // set the view's size, margins, paddings and layout parameters
-
-        v.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                v.getContext().startActivity(new Intent(v.getContext(), JobDescription.class));
-            }
-        });
 
         ViewHolder vh = new ViewHolder((CardView)v);
         return vh;
@@ -53,6 +46,15 @@ public class JobListFragmentAdapter extends RecyclerView.Adapter<JobListFragment
         holder.vAddress.setText(mDataset[position].address);
         holder.vEmail.setText(mDataset[position].email);
 
+        final int pos = position;
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(v.getContext(), JobDescription.class);
+                i.putExtra("data",mDataset[pos]);
+                v.getContext().startActivity(i);
+            }
+        });
     }
 
     // Provide a reference to the views for each data item

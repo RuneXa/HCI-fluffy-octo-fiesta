@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <group android:checkableBehavior="single">
+    <group android:id="@+id/menu_top"
+        android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/home_128x128"
-            android:title="Home" />
+            android:title="Beranda" />
         <item
             android:id="@+id/nav_category"
             android:icon="@drawable/job_category_128x128"
-            android:title="Job Category" />
+            android:title="Cari Pekerjaan" />
         <item
             android:id="@+id/nav_cv"
             android:icon="@drawable/cv_128x128"
@@ -17,21 +18,19 @@
         <item
             android:id="@+id/nav_applied"
             android:icon="@drawable/job_applied_128x128"
-            android:title="Job Applied" />
-    </group>
-    
-    <group>
-
-        <item
-            android:id="@+id/nav_logout"
-            android:icon="@drawable/logout_128x128"
-            android:title="Keluar" />
-
+            android:title="Daftar CV Terkirim" />
         <item
             android:id="@+id/nav_help"
             android:icon="@drawable/help_128x128"
             android:title="Bantuan" />
-
+    </group>
+    
+    <group android:id="@+id/menu_bottom"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout_128x128"
+            android:title="Keluar" />
     </group>
 
 

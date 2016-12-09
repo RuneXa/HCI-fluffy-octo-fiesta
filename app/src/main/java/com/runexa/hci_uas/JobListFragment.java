@@ -22,13 +22,13 @@ public class JobListFragment extends Fragment {
     private RecyclerView.LayoutManager mLayoutManager;
 
     private mDataset[] myDataset = {
-            new mDataset("Lecturer at SU","Lecturer","aaa@aaaa.aa","Disini"),
-            new mDataset("Not Lecturer at SU","Not Lecturer","aaa@aaaa.aa","Disini"),
-            new mDataset("Certainly Not Lecturer at SU","Another","aaa@aaaa.aa","Disini"),
-            new mDataset("Internship at ship","Ship wrecker","aaa@aaaa.aa","Disanaaaaaaaaaaaaaaaaaaaaaaaaa"),
-            new mDataset("aaa","asb","aaa@aaaa.ab","Di"),
-            new mDataset("bbb","asd","aaa@aaaa.ac","sini"),
-            new mDataset("ccc","ase","aaa@aaaa.ad","isin"),
+            new mDataset("Lecturer at SU","Lecturer","aaa@aaaa.aa","Disini","Dicari...."),
+            new mDataset("Not Lecturer at SU","Not Lecturer","aaa@aaaa.aa","Disini",null),
+            new mDataset("Certainly Not Lecturer at SU","Another","aaa@aaaa.aa","Disini",null),
+            new mDataset("Internship at ship","Ship wrecker","aaa@aaaa.aa","Disanaaaaaaaaaaaaaaaaaaaaaaaaa",null),
+            new mDataset("aaa","asb","aaa@aaaa.ab","Di","Lorem Ipsum"),
+            new mDataset("bbb","asd","aaa@aaaa.ac","sini","blabalbalbalblablalba"),
+            new mDataset("ccc","ase","aaa@aaaa.ad","isin","ballbalbalbalab"),
 
     };
 
@@ -57,24 +57,6 @@ public class JobListFragment extends Fragment {
         mAdapter = new JobListFragmentAdapter(myDataset);
         mRecyclerView.setAdapter(mAdapter);
 
-        mRecyclerView.addOnItemTouchListener(new RecyclerView.OnItemTouchListener() {
-            @Override
-            public boolean onInterceptTouchEvent(RecyclerView rv, MotionEvent e) {
-
-                return false;
-            }
-
-            @Override
-            public void onTouchEvent(RecyclerView rv, MotionEvent e) {
-
-            }
-
-            @Override
-            public void onRequestDisallowInterceptTouchEvent(boolean disallowIntercept) {
-
-            }
-
-        });
 
         // Inflate the layout for this fragment
         return v;

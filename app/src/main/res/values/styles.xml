@@ -6,6 +6,8 @@
         <item name="colorPrimary">@color/primary</item>
         <item name="colorPrimaryDark">@color/primary_dark</item>
         <item name="colorAccent">@color/accent</item>
+        <item name="colorButtonNormal">@color/accent</item>
+        <item name="android:textAppearanceButton">@style/TextAppearance.AppCompat.Button.Custom</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -16,5 +18,9 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="TextAppearance.AppCompat.Button.Custom">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
 
 </resources>

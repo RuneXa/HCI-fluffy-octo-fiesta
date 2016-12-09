@@ -38,7 +38,10 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+        navigationView.getMenu().getItem(0).setChecked(true);
+
         fm.beginTransaction().replace(frame,new HomeFragment()).commit();
+
     }
 
     @Override
@@ -51,17 +54,19 @@ public class MainActivity extends AppCompatActivity
                 finish();
                 //super.onBackPressed();
             } else {
+
                 fm.popBackStack();
             }
         }
     }
 
+    /*
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
-    }
+    } */
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

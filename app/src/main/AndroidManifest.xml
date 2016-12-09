@@ -31,9 +31,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".JobDescription"></activity>
+        <activity android:name=".LoginActivity" android:label="Masuk" />
+        <activity android:name=".RegisterActivity" android:label="Daftar" />
+        <activity android:name=".JobDescription" android:label="Deskripsi Pekerjaan"/>
     </application>
 
 </manifest>
