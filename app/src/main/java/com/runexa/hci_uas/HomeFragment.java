@@ -35,21 +35,21 @@ public class HomeFragment extends Fragment {
         daftar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getFragmentManager().beginTransaction().replace(container.getId(),new JobCategoryFragment()).commit();
+                getFragmentManager().beginTransaction().replace(container.getId(),new JobCategoryFragment()).addToBackStack(null).commit();
             }
         });
 
         cv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getFragmentManager().beginTransaction().replace(container.getId(),new CVFragment()).commit();
+                getFragmentManager().beginTransaction().replace(container.getId(),new CVFragment()).addToBackStack(null).commit();
             }
         });
 
         list.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getFragmentManager().beginTransaction().replace(container.getId(),new JobListFragment()).commit();
+                getFragmentManager().beginTransaction().replace(container.getId(),new JobListFragment()).addToBackStack(null).commit();
             }
         });
 

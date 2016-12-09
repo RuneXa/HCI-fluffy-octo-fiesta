@@ -1,5 +1,6 @@
 package com.runexa.hci_uas;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -46,7 +47,12 @@ public class MainActivity extends AppCompatActivity
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-            super.onBackPressed();
+            if(fm.getBackStackEntryCount() == 0){
+                finish();
+                //super.onBackPressed();
+            } else {
+                fm.popBackStack();
+            }
         }
     }
 
@@ -79,21 +85,25 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
-            fm.beginTransaction().replace(frame,new HomeFragment()).commit();
+            fm.beginTransaction().replace(frame,new HomeFragment()).addToBackStack(null).commit();
         } else if (id == R.id.nav_applied) {
-            fm.beginTransaction().replace(frame,new JobListFragment()).commit();
+            fm.beginTransaction().replace(frame,new JobListFragment()).addToBackStack(null).commit();
         } else if (id == R.id.nav_category) {
-            fm.beginTransaction().replace(frame,new JobCategoryFragment()).commit();
+            fm.beginTransaction().replace(frame,new JobCategoryFragment()).addToBackStack(null).commit();
         } else if (id == R.id.nav_cv) {
-            fm.beginTransaction().replace(frame,new CVFragment()).commit();
+            fm.beginTransaction().replace(frame,new CVFragment()).addToBackStack(null).commit();
         } else if (id == R.id.nav_help) {
             Toast.makeText(this,"Not Implemented",Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_logout) {
-            Toast.makeText(this,"Not Implemented",Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, StartActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(intent);
+            finish();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
 }
