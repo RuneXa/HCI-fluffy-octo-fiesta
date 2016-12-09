@@ -1,5 +1,6 @@
 package com.runexa.hci_uas;
 
+import android.content.Intent;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -30,8 +31,15 @@ public class JobListFragmentAdapter extends RecyclerView.Adapter<JobListFragment
                 .inflate(R.layout.card_job_list, parent, false);
         // set the view's size, margins, paddings and layout parameters
 
-        //ViewHolder vh = new ViewHolder(v);
-        return new ViewHolder((CardView) v);
+        v.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                v.getContext().startActivity(new Intent(v.getContext(), JobDescription.class));
+            }
+        });
+
+        ViewHolder vh = new ViewHolder((CardView)v);
+        return vh;
     }
 
     // Replace the contents of a view (invoked by the layout manager)
@@ -58,7 +66,6 @@ public class JobListFragmentAdapter extends RecyclerView.Adapter<JobListFragment
         protected TextView vEmail;
         protected ImageView vImage;
 
-
         // each data item is just a string in this case
         public CardView mCardView;
         public ViewHolder(CardView v) {
@@ -70,6 +77,7 @@ public class JobListFragmentAdapter extends RecyclerView.Adapter<JobListFragment
             vImage = (ImageView) v.findViewById(R.id.info_image);
             mCardView = v;
         }
+
     }
 
     // Return the size of your dataset (invoked by the layout manager)
