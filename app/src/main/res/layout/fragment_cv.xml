@@ -8,118 +8,195 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:id="@+id/cv_text">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cv_text_title"
+                android:text="Curiculum Vitae"
+                android:gravity="center"
+                android:textSize="20sp"
+                />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="@dimen/activity_vertical_margin"
                 android:id="@+id/cv_text_nama"
-                android:text="Nama Lengkap :" />
+                android:text="Nama Lengkap"
+                android:layout_below="@id/cv_text_title"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_below="@id/cv_text_nama"
+                android:id="@+id/cv_text_nama_PH"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:text="Jenis Kelamin"
+                android:id="@+id/cv_text_gender"
+                android:layout_below="@id/cv_text_nama_PH"
+                />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cv_text_nama_PH"
+                android:layout_toEndOf="@id/cv_text_gender"
+                android:id="@+id/cv_text_gender_PH"
+                >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:text="Laki-laki"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:text="Perempuan"/>
+
+            </RadioGroup>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:text="Jenis Kelamin :" />
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:text="Tempat/Tanggal Lahir"
+                android:id="@+id/cv_text_ttl"
+                android:layout_below="@id/cv_text_gender_PH"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_below="@id/cv_text_ttl"
+                android:id="@+id/cv_text_ttl_PH"
+                />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:text="Tempat/Tanggal Lahir :" />
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:text="Alamat Tinggal"
+                android:id="@+id/cv_text_address"
+                android:layout_below="@id/cv_text_ttl_PH"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_below="@id/cv_text_address"
+                android:id="@+id/cv_text_address_PH"
+                />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:text="Alamat Tinggal :" />
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:text="No. Telp"
+                android:id="@+id/cv_text_telp"
+                android:layout_below="@id/cv_text_address_PH"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_below="@id/cv_text_telp"
+                android:id="@+id/cv_text_telp_PH"
+                />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:text="No. Telp :" />
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:text="Email"
+                android:id="@+id/cv_text_email"
+                android:layout_below="@id/cv_text_telp_PH" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_below="@id/cv_text_email"
+                android:id="@+id/cv_text_email_PH" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:text="Email :" />
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:text="Riwayat Edukasi"
+                android:id="@+id/cv_text_edukasi"
+                android:layout_below="@id/cv_text_email_PH"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_below="@id/cv_text_edukasi"
+                android:id="@+id/cv_text_edukasi_PH" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:text="Riwayat Edukasi :" />
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:text="Riwayat Kerja"
+                android:id="@+id/cv_text_kerja"
+                android:layout_below="@id/cv_text_edukasi_PH"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_below="@id/cv_text_kerja"
+                android:id="@+id/cv_text_kerja_PH" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:text="Riwayat Kerja :" />
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:text="Kemampuan"
+                android:id="@+id/cv_text_skill"
+                android:layout_below="@id/cv_text_kerja_PH"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_below="@id/cv_text_skill"
+                android:id="@+id/cv_text_skill_PH" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:text="Kemampuan :" />
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:text="Portofolio"
+                android:id="@+id/cv_text_portofolio"
+                android:layout_below="@id/cv_text_skill_PH" />
 
-            <TextView
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:text="Portofolio :" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_toEndOf="@id/cv_text"
-            android:id="@+id/cv_nama"
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-        </LinearLayout>
-
-
+                android:layout_gravity="end"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_below="@id/cv_text_portofolio"
+                android:id="@+id/cv_text_portofolio_PH" />
 
     </RelativeLayout>
 
-
 </ScrollView>
+
