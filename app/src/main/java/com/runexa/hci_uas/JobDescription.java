@@ -42,7 +42,7 @@ public class JobDescription extends AppCompatActivity {
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Snackbar.make(submit.getRootView(),"CV Terkirim",Snackbar.LENGTH_SHORT).show();
+                Snackbar.make(findViewById(R.id.cv_layout),"CV Terkirim",Snackbar.LENGTH_SHORT).show();
             }
         });
 

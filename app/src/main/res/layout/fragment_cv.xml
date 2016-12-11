@@ -15,6 +15,7 @@
                 android:text="Curiculum Vitae"
                 android:gravity="center"
                 android:textSize="20sp"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
                 />
 
             <TextView
@@ -32,6 +33,9 @@
                 android:layout_marginStart="@dimen/activity_horizontal_margin"
                 android:layout_below="@id/cv_text_nama"
                 android:id="@+id/cv_text_nama_PH"
+                android:inputType="text"
+                android:nextFocusDown="@+id/cv_text_gender_PH"
+                android:imeOptions="actionNext"
                 />
 
             <TextView
@@ -54,7 +58,7 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
                     android:text="Laki-laki"/>
 
                 <RadioButton
@@ -69,7 +73,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/activity_vertical_margin"
-                android:text="Tempat/Tanggal Lahir"
+                android:text="Tanggal Lahir"
                 android:id="@+id/cv_text_ttl"
                 android:layout_below="@id/cv_text_gender_PH"/>
 
@@ -80,6 +84,9 @@
                 android:layout_marginStart="@dimen/activity_horizontal_margin"
                 android:layout_below="@id/cv_text_ttl"
                 android:id="@+id/cv_text_ttl_PH"
+                android:inputType="date"
+                android:nextFocusDown="@+id/cv_text_address_PH"
+                android:imeOptions="actionNext"
                 />
 
             <TextView
@@ -97,6 +104,9 @@
                 android:layout_marginStart="@dimen/activity_horizontal_margin"
                 android:layout_below="@id/cv_text_address"
                 android:id="@+id/cv_text_address_PH"
+                android:inputType="textLongMessage"
+                android:nextFocusDown="@+id/cv_text_telp_PH"
+                android:imeOptions="actionNext"
                 />
 
             <TextView
@@ -114,6 +124,9 @@
                 android:layout_marginStart="@dimen/activity_horizontal_margin"
                 android:layout_below="@id/cv_text_telp"
                 android:id="@+id/cv_text_telp_PH"
+                android:inputType="phone"
+                android:nextFocusDown="@+id/cv_text_email_PH"
+                android:imeOptions="actionNext"
                 />
 
             <TextView
@@ -130,7 +143,11 @@
                 android:layout_gravity="end"
                 android:layout_marginStart="@dimen/activity_horizontal_margin"
                 android:layout_below="@id/cv_text_email"
-                android:id="@+id/cv_text_email_PH" />
+                android:id="@+id/cv_text_email_PH"
+                android:inputType="textEmailAddress"
+                android:nextFocusDown="@+id/cv_text_edukasi_PH"
+                android:imeOptions="actionNext"
+                />
 
             <TextView
                 android:layout_width="match_parent"
@@ -146,7 +163,10 @@
                 android:layout_gravity="end"
                 android:layout_marginStart="@dimen/activity_horizontal_margin"
                 android:layout_below="@id/cv_text_edukasi"
-                android:id="@+id/cv_text_edukasi_PH" />
+                android:id="@+id/cv_text_edukasi_PH"
+                android:inputType="textMultiLine"
+                android:nextFocusDown="@+id/cv_text_kerja_PH"
+                android:imeOptions="actionNext"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -162,7 +182,11 @@
                 android:layout_gravity="end"
                 android:layout_marginStart="@dimen/activity_horizontal_margin"
                 android:layout_below="@id/cv_text_kerja"
-                android:id="@+id/cv_text_kerja_PH" />
+                android:id="@+id/cv_text_kerja_PH"
+                android:inputType="textMultiLine"
+                android:nextFocusDown="@+id/cv_text_skill_PH"
+                android:imeOptions="actionNext"
+                />
 
             <TextView
                 android:layout_width="match_parent"
@@ -178,7 +202,11 @@
                 android:layout_gravity="end"
                 android:layout_marginStart="@dimen/activity_horizontal_margin"
                 android:layout_below="@id/cv_text_skill"
-                android:id="@+id/cv_text_skill_PH" />
+                android:id="@+id/cv_text_skill_PH"
+                android:inputType="textMultiLine"
+                android:nextFocusDown="@+id/cv_text_portofolio_PH"
+                android:imeOptions="actionNext"
+                />
 
             <TextView
                 android:layout_width="match_parent"
@@ -193,8 +221,26 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
                 android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
                 android:layout_below="@id/cv_text_portofolio"
-                android:id="@+id/cv_text_portofolio_PH" />
+                android:id="@+id/cv_text_portofolio_PH"
+                android:inputType="textMultiLine"
+                android:nextFocusDown="@+id/cv_button_save"
+                android:imeOptions="actionDone"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_below="@id/cv_text_portofolio_PH"
+                android:layout_marginBottom="60dp"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:id="@+id/cv_button_save"
+                android:text="Simpan"
+                />
+
 
     </RelativeLayout>
 

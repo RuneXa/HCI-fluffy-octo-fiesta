@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/HCI-fluffy-octo-fiesta.iml" filepath="$PROJECT_DIR$/HCI-fluffy-octo-fiesta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HCI_UAS.iml" filepath="$PROJECT_DIR$/HCI_UAS.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
