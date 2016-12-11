@@ -35,7 +35,11 @@ public class JobCategoryFragment extends Fragment {
         gv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                getFragmentManager().beginTransaction().replace(frame.getId(),new JobListFragment()).addToBackStack(null).commit();
+                Bundle bundl = new Bundle();
+                bundl.putBoolean("AppliedOnly",false);
+                Fragment f = new JobListFragment();
+                f.setArguments(bundl);
+                getFragmentManager().beginTransaction().replace(frame.getId(),f).addToBackStack(null).commit();
             }
         });
 

@@ -21,25 +21,27 @@ public class JobListFragment extends Fragment {
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
 
-    private mDataset[] myDataset = {
-            new mDataset("Lecturer at SU","Lecturer","aaa@aaaa.aa","Disini","Dicari...."),
-            new mDataset("Not Lecturer at SU","Not Lecturer","aaa@aaaa.aa","Disini",null),
-            new mDataset("Certainly Not Lecturer at SU","Another","aaa@aaaa.aa","Disini",null),
-            new mDataset("Internship at ship","Ship wrecker","aaa@aaaa.aa","Disanaaaaaaaaaaaaaaaaaaaaaaaaa",null),
-            new mDataset("aaa","asb","aaa@aaaa.ab","Di","Lorem Ipsum"),
-            new mDataset("bbb","asd","aaa@aaaa.ac","sini","blabalbalbalblablalba"),
-            new mDataset("ccc","ase","aaa@aaaa.ad","isin","ballbalbalbalab"),
+    boolean appliedOnly = false;
 
+    private mDataset[] myDataset = {
+            new mDataset("Lecturer at SU","Lecturer","aaa@aaaa.aa","Disini","Dicari....",false),
+            new mDataset("Not Lecturer at SU","Not Lecturer","aaa@aaaa.aa","Disini",null,true),
+            new mDataset("Certainly Not Lecturer at SU","Another","aaa@aaaa.aa","Disini",null,false),
+            new mDataset("Internship at ship","Ship wrecker","aaa@aaaa.aa","Disanaaaaaaaaaaaaaaaaaaaaaaaaa",null,false),
+            new mDataset("aaa","asb","aaa@aaaa.ab","Di","Lorem Ipsum",false),
+            new mDataset("bbb","asd","aaa@aaaa.ac","sini","blabalbalbalblablalba",true),
+            new mDataset("ccc","ase","aaa@aaaa.ad","isin","ballbalbalbalab",true)
     };
 
     public JobListFragment() {
         // Required empty public constructor
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        appliedOnly = getArguments().getBoolean("AppliedOnly");
 
         View v = inflater.inflate(R.layout.fragment_job_list, container, false);
 
@@ -54,7 +56,7 @@ public class JobListFragment extends Fragment {
         mRecyclerView.setLayoutManager(mLayoutManager);
 
         // specify an adapter (see also next example)
-        mAdapter = new JobListFragmentAdapter(myDataset);
+        mAdapter = new JobListFragmentAdapter(myDataset,appliedOnly);
         mRecyclerView.setAdapter(mAdapter);
 
 

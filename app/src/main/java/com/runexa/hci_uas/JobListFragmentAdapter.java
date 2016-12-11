@@ -9,17 +9,37 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
 /**
  * Created by richi on 12/3/2016.
  */
 
 public class JobListFragmentAdapter extends RecyclerView.Adapter<JobListFragmentAdapter.ViewHolder> {
 
-   private mDataset[] mDataset;
+   private ArrayList<mDataset> mDataset;
 
     // Provide a suitable constructor (depends on the kind of dataset)
-    public JobListFragmentAdapter(mDataset[] myDataset) {
-        mDataset = myDataset;
+    public JobListFragmentAdapter(mDataset[] myDataset, boolean appliedOnly) {
+
+        mDataset = new ArrayList<mDataset>();
+
+        if(appliedOnly){
+            for (mDataset m: myDataset)
+            {
+                if(m.applied){
+                    mDataset.add(m);
+                }
+            }
+        } else {
+            for (mDataset m: myDataset)
+            {
+                mDataset.add(m);
+            }
+        }
+
     }
 
     // Create new views (invoked by the layout manager)
@@ -41,17 +61,17 @@ public class JobListFragmentAdapter extends RecyclerView.Adapter<JobListFragment
         // - get element from your dataset at this position
         // - replace the contents of the view with that element
 
-        holder.vTitle.setText(mDataset[position].title);
-        holder.vPos.setText(mDataset[position].position);
-        holder.vAddress.setText(mDataset[position].address);
-        holder.vEmail.setText(mDataset[position].email);
+        holder.vTitle.setText(mDataset.get(position).title);
+        holder.vPos.setText(mDataset.get(position).position);
+        holder.vAddress.setText(mDataset.get(position).address);
+        holder.vEmail.setText(mDataset.get(position).email);
 
         final int pos = position;
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(v.getContext(), JobDescription.class);
-                i.putExtra("data",mDataset[pos]);
+                i.putExtra("data",mDataset.get(pos));
                 v.getContext().startActivity(i);
             }
         });
@@ -85,6 +105,6 @@ public class JobListFragmentAdapter extends RecyclerView.Adapter<JobListFragment
     // Return the size of your dataset (invoked by the layout manager)
     @Override
     public int getItemCount() {
-        return mDataset.length;
+        return mDataset.size();
     }
 }

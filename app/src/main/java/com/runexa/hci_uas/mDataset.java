@@ -12,13 +12,15 @@ public class mDataset implements Serializable {
     public String address;
     public String email;
     public String description;
+    public boolean applied;
 
-    public mDataset(String t, String p, String e, String a, String d) {
+    public mDataset(String t, String p, String e, String a, String d, boolean ap) {
         title = t;
         position = p;
         email = e;
         address = a;
         description = d;
+        applied = ap;
     }
 
 }

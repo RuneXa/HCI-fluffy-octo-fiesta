@@ -1,5 +1,6 @@
 package com.runexa.hci_uas;
 
+import android.graphics.Color;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -15,7 +16,9 @@ public class JobDescription extends AppCompatActivity {
     protected TextView Address;
     protected TextView Email;
     protected TextView Desc;
-    Button submit;
+    protected Button submit;
+
+    boolean applied;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,13 +41,31 @@ public class JobDescription extends AppCompatActivity {
         Address.setText(data.address);
         Email.setText(data.email);
         Desc.setText(data.description);
+        applied = data.applied;
 
-        submit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Snackbar.make(findViewById(R.id.cv_layout),"CV Terkirim",Snackbar.LENGTH_SHORT).show();
-            }
-        });
+        if(applied){
+            submit.setText("Batal");
+            submit.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Snackbar.make(findViewById(R.id.cv_layout),"Pengiriman CV Dibatalkan",Snackbar.LENGTH_SHORT).show();
+                    submit.setClickable(false);
+                    submit.setEnabled(false);
+                    submit.setBackgroundColor(Color.DKGRAY);
+                }
+            });
+        } else {
+            submit.setText("Kirim CV");
+            submit.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Snackbar.make(findViewById(R.id.cv_layout),"CV Terkirim",Snackbar.LENGTH_SHORT).show();
+                    submit.setClickable(false);
+                    submit.setEnabled(false);
+                    submit.setBackgroundColor(Color.DKGRAY);
+                }
+            });
+        }
 
     }
 

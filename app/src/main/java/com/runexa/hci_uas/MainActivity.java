@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -17,10 +18,11 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener, HomeFragment.OnHomeButtonSelected {
 
     FragmentManager fm = getSupportFragmentManager();
     int frame = R.id.frame_main;
+    NavigationView navigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +37,7 @@ public class MainActivity extends AppCompatActivity
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
         navigationView.getMenu().getItem(0).setChecked(true);
@@ -92,7 +94,11 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_home) {
             fm.beginTransaction().replace(frame,new HomeFragment()).addToBackStack(null).commit();
         } else if (id == R.id.nav_applied) {
-            fm.beginTransaction().replace(frame,new JobListFragment()).addToBackStack(null).commit();
+            Bundle bundl = new Bundle();
+            bundl.putBoolean("AppliedOnly",true);
+            Fragment f = new JobListFragment();
+            f.setArguments(bundl);
+            fm.beginTransaction().replace(frame,f).addToBackStack(null).commit();
         } else if (id == R.id.nav_category) {
             fm.beginTransaction().replace(frame,new JobCategoryFragment()).addToBackStack(null).commit();
         } else if (id == R.id.nav_cv) {
@@ -111,4 +117,21 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
+    @Override
+    public void OnButtonSelected(int i) {
+        switch(i){
+            case 1 :
+                navigationView.getMenu().getItem(1).setChecked(true);
+                break;
+            case 2 :
+                navigationView.getMenu().getItem(2).setChecked(true);
+                break;
+            case 3 :
+                navigationView.getMenu().getItem(3).setChecked(true);
+                break;
+            default:
+                navigationView.getMenu().getItem(0).setChecked(true);
+                break;
+        }
+    }
 }
