@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Job">
+        <item>
+            {"title":"Bahrain","position":"12345","email":"a@a","address":"a","description":"b","applied":true}
+        </item>
+        <item>
+            {"title":"Bahrain","position":"12345","email":"a@a","address":"a","description":"b","applied":false}
+        </item>
+        <item>
+            {"title":"Bahrain","position":"12345","email":"a@a","address":"a","description":"b","applied":true}
+        </item>
+        <item>
+            {"title":"Bahrain","position":"12345","email":"a@a","address":"a","description":"b","applied":false}
+        </item>
+        <item>
+            {"title":"Bahrain","position":"12345","email":"a@a","address":"a","description":"b","applied":false}
+        </item>
+        <item>
+            {"title":"Bahrain","position":"12345","email":"a@a","address":"a","description":"b","applied":false}
+        </item>
+    </string-array>
+</resources>

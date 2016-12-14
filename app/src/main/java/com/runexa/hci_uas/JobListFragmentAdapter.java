@@ -22,7 +22,7 @@ public class JobListFragmentAdapter extends RecyclerView.Adapter<JobListFragment
    private ArrayList<mDataset> mDataset;
 
     // Provide a suitable constructor (depends on the kind of dataset)
-    public JobListFragmentAdapter(mDataset[] myDataset, boolean appliedOnly) {
+    public JobListFragmentAdapter(ArrayList<mDataset> myDataset, boolean appliedOnly) {
 
         mDataset = new ArrayList<mDataset>();
 
