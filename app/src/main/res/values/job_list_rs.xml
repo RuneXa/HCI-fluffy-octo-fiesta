@@ -2,22 +2,820 @@
 <resources>
     <string-array name="Job">
         <item>
-            {"title":"Bahrain","position":"12345","email":"a@a","address":"a","description":"b","applied":true}
+          {
+        \"title\":\"MARKETING EVENT PROJECT - PT. Jawa Pos Koran\",
+        \"position\":\"MARKETING EVENT PROJECT\",
+        \"email\":\"hrd@jawapos.co.id\",
+        \"address\":\"Jl. Ahmad Yani no.88 Lt.5. SURABAYA\",
+        \"description\":\"
+        <![CDATA[
+Persyaratan:
+<br><\br>
+Pria dan wanita
+<br><\br>
+Pendidikan minimal diploma atau sarjana
+<br><\br>
+Indek prestasi minimal 2,75
+<br><\br>
+Usia tidak lebih dari 24 tahun
+<br><\br>
+Sehat jasmani dan rohani
+<br><\br>
+Berkepribadian baik
+<br><\br>
+Berpenampilan menarik
+<br><\br>
+Kreatif
+<br><\br>
+Berwawasan luas
+<br><\br>
+Mudah bergaul
+<br><\br>
+Faham tentang sosial media
+<br><\br>
+Siap ditempatkan diseluruh wilayah operasional perusahaan
+<br><\br>
+]]>
+        \",
+        \"applied\":false
+        }
+        </item>
+
+        <item>
+            {
+        \"title\":\"DESIGNER EVENT - PT. Jawa Pos Koran\",
+        \"position\":\"DESIGNER EVENT\",
+        \"email\":\"hrd@jawapos.co.id\",
+        \"address\":\"Jl. Ahmad Yani no.88 Lt.5. SURABAYA\",
+        \"description\":\"
+        <![CDATA[
+Persyaratan:
+<br><\br>
+Pria dan wanita
+<br><\br>
+Pendidikan minimal diploma atau sarjana
+<br><\br>
+Indek prestasi minimal 2,75
+<br><\br>
+Usia tidak lebih dari 24 tahun
+<br><\br>
+Sehat jasmani dan rohani
+<br><\br>
+Berkepribadian baik
+<br><\br>
+Berpenampilan menarik
+<br><\br>
+Kreatif
+<br><\br>
+Berwawasan luas
+<br><\br>
+Mudah bergaul
+<br><\br>
+Faham tentang sosial media
+<br><\br>
+Siap ditempatkan diseluruh wilayah operasional perusahaan
+<br><\br>
+]]>
+        \",
+        \"applied\":false
+        }
+        </item>
+
+        <item>
+             {
+        \"title\":\"Officer - PT Angkasa Pura Airport\",
+        \"position\":\"Officer\",
+        \"email\":\"hrd@angkasapura.com\",
+        \"address\":\"Kemayoran Blok B12 Kav 2, Jakarta Pusat\",
+        \"description\":\"
+        <![CDATA[
+Persyaratan:
+<br><\br>
+Pria dan wanita
+<br><\br>
+Pendidikan minimal D3 atau S1
+<br><\br>
+IPK minimal 2,75
+<br><\br>
+Sehat jasmani dan rohani
+<br><\br>
+Tidak buta warna
+<br><\br>
+Berkepribadian baik
+<br><\br>
+Berpenampilan menarik
+<br><\br>
+Berwawasan luas
+<br><\br>
+Mahir berbahasa inggris
+<br><\br>
+Memiliki kemampuan analisa yang baik
+<br><\br>
+Mampu bekerja dibawah tekanan
+<br><\br>
+Tidak pernah tersangkut kasus hukum
+<br><\br>
+Tidak mengkonsumsi narkotika dan sejenisnya
+<br><\br>
+Siap ditempatkan diseluruh wilayah Indonesia
+<br><\br>
+]]>
+        \",
+        \"applied\":false
+        }
+        </item>
+
+        <item>
+             {
+        \"title\":\"Management Trainee - PT Citilink Indonesia\",
+        \"position\":\"Management Trainee\",
+        \"email\":\"hrd@citilink.com\",
+        \"address\":\"Jln S Parman Kav 72 Slipi Jakarta Barat\",
+        \"description\":\"
+        <![CDATA[
+Persyaratan:
+<br><\br>
+Pria dan wanita
+<br><\br>
+Pendidikan minimal D3 atau S1
+<br><\br>
+IPK minimal 2,85
+<br><\br>
+Sehat jasmani dan rohani
+<br><\br>
+Berkepribadian baik
+<br><\br>
+Berpenampilan menarik
+<br><\br>
+Berwawasan luas
+<br><\br>
+Memiliki analisa yang baik
+<br><\br>
+Mampu bekerja dibawah tekanan
+<br><\br>
+Memiliki analisa yang baik
+<br><\br>
+Berjiwa pemimpin
+<br><\br>
+Siap ditempatkan diseluruh wilayah Indonesia
+<br><\br>
+]]>
+        \",
+        \"applied\":false
+        }
+        </item>
+
+        <item>
+            {
+        \"title\":\"Call center - PT XL Axiata\",
+        \"position\":\"Call center\",
+        \"email\":\"hrd@xl.co.id\",
+        \"address\":\"Jln DR Ide Anak Agung Gde Agung Lot E4-7 No 1 Kawasan Mega Kuningan, Jakarta Pusat\",
+        \"description\":\"
+        <![CDATA[
+Persyaratan:
+<br><\br>
+Pria dan wanita
+<br><\br>
+Pendidikan minimal D3 semua jurusan
+<br><\br>
+Indek prestasi 2,75
+<br><\br>
+Mampu berbahasa inggris
+<br><\br>
+Single
+<br><\br>
+Komunikatif
+<br><\br>
+Berwawasan luas
+<br><\br>
+Berkepribadian baik
+<br><\br>
+Berpenampilan menarik
+<br><\br>
+Mampu bekerja dibawah tekanan
+<br><\br>
+Mudah beradaptasi
+<br><\br>
+Siap ditempatkan diseluruh Indonesia
+<br><\br>
+]]>
+        \",
+        \"applied\":false
+        }
+        </item>
+
+        <item>
+            {
+        \"title\":\"ASM Device - PT XL Axiata\",
+        \"position\":\"ASM Device\",
+        \"email\":\"hrd@xl.co.id\",
+        \"address\":\"Jln DR Ide Anak Agung Gde Agung Lot E4-7 No 1 Kawasan Mega Kuningan, Jakarta Pusat\",
+        \"description\":\"
+        <![CDATA[
+Persyaratan:
+<br><\br>
+Pria dan wanita
+<br><\br>
+Pendidikan minimal D3 semua jurusan
+<br><\br>
+Indek prestasi 2,75
+<br><\br>
+Mampu berbahasa inggris
+<br><\br>
+Single
+<br><\br>
+Komunikatif
+<br><\br>
+Berwawasan luas
+<br><\br>
+Berkepribadian baik
+<br><\br>
+Berpenampilan menarik
+<br><\br>
+Mampu bekerja dibawah tekanan
+<br><\br>
+Mudah beradaptasi
+<br><\br>
+Siap ditempatkan diseluruh Indonesia
+<br><\br>
+]]>
+        \",
+        \"applied\":false
+        }
+        </item>
+
+        <item>
+            {
+        \"title\":\"Accounting - PT XL Axiata\",
+        \"position\":\"Accounting\",
+        \"email\":\"hrd@xl.co.id\",
+        \"address\":\"Jln DR Ide Anak Agung Gde Agung Lot E4-7 No 1 Kawasan Mega Kuningan, Jakarta Pusat\",
+        \"description\":\"
+        <![CDATA[
+Persyaratan:
+<br><\br>
+Pria dan wanita
+<br><\br>
+Pendidikan minimal D3 semua jurusan
+<br><\br>
+Indek prestasi 2,75
+<br><\br>
+Mampu berbahasa inggris
+<br><\br>
+Single
+<br><\br>
+Komunikatif
+<br><\br>
+Berwawasan luas
+<br><\br>
+Berkepribadian baik
+<br><\br>
+Berpenampilan menarik
+<br><\br>
+Mampu bekerja dibawah tekanan
+<br><\br>
+Mudah beradaptasi
+<br><\br>
+Siap ditempatkan diseluruh Indonesia
+<br><\br>
+]]>
+        \",
+        \"applied\":false
+        }
+        </item>
+
+        <item>
+            {
+        \"title\":\"Analyst - PT XL Axiata\",
+        \"position\":\"Analyst\",
+        \"email\":\"hrd@xl.co.id\",
+        \"address\":\"Jln DR Ide Anak Agung Gde Agung Lot E4-7 No 1 Kawasan Mega Kuningan, Jakarta Pusat\",
+        \"description\":\"
+        <![CDATA[
+Persyaratan:
+<br><\br>
+Pria dan wanita
+<br><\br>
+Pendidikan minimal D3 semua jurusan
+<br><\br>
+Indek prestasi 2,75
+<br><\br>
+Mampu berbahasa inggris
+<br><\br>
+Single
+<br><\br>
+Komunikatif
+<br><\br>
+Berwawasan luas
+<br><\br>
+Berkepribadian baik
+<br><\br>
+Berpenampilan menarik
+<br><\br>
+Mampu bekerja dibawah tekanan
+<br><\br>
+Mudah beradaptasi
+<br><\br>
+Siap ditempatkan diseluruh Indonesia
+<br><\br>
+]]>
+        \",
+        \"applied\":false
+        }
+        </item>
+        {
+        \"title\":\"Finance Accounting - PT XL Axiata\",
+        \"position\":\"Finance Accounting\",
+        \"email\":\"hrd@xl.co.id\",
+        \"address\":\"Jln DR Ide Anak Agung Gde Agung Lot E4-7 No 1 Kawasan Mega Kuningan, Jakarta Pusat\",
+        \"description\":\"
+        <![CDATA[
+Persyaratan:
+<br><\br>
+Pria dan wanita
+<br><\br>
+Pendidikan minimal D3 semua jurusan
+<br><\br>
+Indek prestasi 2,75
+<br><\br>
+Mampu berbahasa inggris
+<br><\br>
+Single
+<br><\br>
+Komunikatif
+<br><\br>
+Berwawasan luas
+<br><\br>
+Berkepribadian baik
+<br><\br>
+Berpenampilan menarik
+<br><\br>
+Mampu bekerja dibawah tekanan
+<br><\br>
+Mudah beradaptasi
+<br><\br>
+Siap ditempatkan diseluruh Indonesia
+<br><\br>
+]]>
+        \",
+        \"applied\":false
+        }
+        <item>
+            {
+        \"title\":\"Surveyor Cabang - Asuransi Sinar Mas\",
+        \"position\":\"Surveyor Cabang\",
+        \"email\":\"hrd@sinarmas.com\",
+        \"address\":\"Jln Fachrudin No 18 Jakarta Pusat\",
+        \"description\":\"
+        <![CDATA[
+Persyaratan:
+<br><\br>
+Pria dan wanita
+<br><\br>
+Pendidikan minimal SMU sederajat
+<br><\br>
+Usia tidak lebih dari 26 tahun
+<br><\br>
+Sehat jasmani dan rohani
+<br><\br>
+Berkepribadian baik
+<br><\br>
+Berpenampilan menarik
+<br><\br>
+Berwawasan luas
+<br><\br>
+Memiliki kemampuan analisa yang baik
+<br><\br>
+Komunikatif
+<br><\br>
+Bertanggung jawab pada pekerjaan
+<br><\br>
+Jujur dan ulet
+<br><\br>
+Mampu bekerja dibawah tekanan
+<br><\br>
+Mahir mengoperasikan komputer
+<br><\br>
+Siap ditempatkan diseluruh Indonesia
+<br><\br>
+]]>
+        \",
+        \"applied\":false
+        }
+        </item>
+        {
+        \"title\":\"Procurement Buyer - PT AXA Mandiri Financial\",
+        \"position\":\"Procurement Buyer\",
+        \"email\":\"hrd@axa.co.id\",
+        \"address\":\"Jln Prof Dr Satrio Kav 18 Kuningan City, Jakarta Pusat\",
+        \"description\":\"
+        <![CDATA[
+Persyaratan:
+<br><\br>
+Pria dan wanita
+<br><\br>
+Pendidikan minimal D3 semua jurusan
+<br><\br>
+IPK minimal 2,75
+<br><\br>
+Sehat jasmani dan rohani
+<br><\br>
+Fresh graduate
+<br><\br>
+Single
+<br><\br>
+Berpenampilan menarik
+<br><\br>
+Berkepribadian baik
+<br><\br>
+Berwawasan luas
+<br><\br>
+Komunikatif
+<br><\br>
+Mampu bernegosiasi
+<br><\br>
+Mampu berbahasa inggris
+<br><\br>
+Berjiwa pemimpin
+<br><\br>
+Mampu bekerja dibawah tekanan
+<br><\br>
+Siap ditempatkan diseluruh wilayah Indonesia
+<br><\br>
+]]>
+        \",
+        \"applied\":false
+        }
+        <item>
+             {
+        \"title\":\"Relationship Officer - PT AXA Mandiri Financial\",
+        \"position\":\"Relationship Officer\",
+        \"email\":\"hrd@axa.co.id\",
+        \"address\":\"Jln Prof Dr Satrio Kav 18 Kuningan City, Jakarta Pusat\",
+        \"description\":\"
+        <![CDATA[
+Persyaratan:
+<br><\br>
+Pria dan wanita
+<br><\br>
+Pendidikan minimal D3 semua jurusan
+<br><\br>
+IPK minimal 2,75
+<br><\br>
+Sehat jasmani dan rohani
+<br><\br>
+Fresh graduate
+<br><\br>
+Single
+<br><\br>
+Berpenampilan menarik
+<br><\br>
+Berkepribadian baik
+<br><\br>
+Berwawasan luas
+<br><\br>
+Komunikatif
+<br><\br>
+Mampu bernegosiasi
+<br><\br>
+Mampu berbahasa inggris
+<br><\br>
+Berjiwa pemimpin
+<br><\br>
+Mampu bekerja dibawah tekanan
+<br><\br>
+Siap ditempatkan diseluruh wilayah Indonesia
+<br><\br>
+]]>
+        \",
+        \"applied\":false
+        }
         </item>
         <item>
-            {"title":"Bahrain","position":"12345","email":"a@a","address":"a","description":"b","applied":false}
+            {
+        \"title\":\"Actuary - PT AXA Mandiri Financial\",
+        \"position\":\"Actuary\",
+        \"email\":\"hrd@axa.co.id\",
+        \"address\":\"Jln Prof Dr Satrio Kav 18 Kuningan City, Jakarta Pusat\",
+        \"description\":\"
+        <![CDATA[
+Persyaratan:
+<br><\br>
+Pria dan wanita
+<br><\br>
+Pendidikan minimal D3 semua jurusan
+<br><\br>
+IPK minimal 2,75
+<br><\br>
+Sehat jasmani dan rohani
+<br><\br>
+Fresh graduate
+<br><\br>
+Single
+<br><\br>
+Berpenampilan menarik
+<br><\br>
+Berkepribadian baik
+<br><\br>
+Berwawasan luas
+<br><\br>
+Komunikatif
+<br><\br>
+Mampu bernegosiasi
+<br><\br>
+Mampu berbahasa inggris
+<br><\br>
+Berjiwa pemimpin
+<br><\br>
+Mampu bekerja dibawah tekanan
+<br><\br>
+Siap ditempatkan diseluruh wilayah Indonesia
+<br><\br>
+]]>
+        \",
+        \"applied\":false
+        }
         </item>
         <item>
-            {"title":"Bahrain","position":"12345","email":"a@a","address":"a","description":"b","applied":true}
+             {
+        \"title\":\"Officer - PT Askrindo\",
+        \"position\":\"Officer\",
+        \"email\":\"hrd@askrindo.com\",
+        \"address\":\"Jln Angkasa Blok B-9 Kav 8 Kota Baru, Kemayoran\",
+        \"description\":\"
+        <![CDATA[
+Persyaratan:
+<br><\br>
+Pria dan wanita
+<br><\br>
+Pendidikan minimal D3 atau S1 semua jurusan
+<br><\br>
+Ipk minimal 2,75
+<br><\br>
+Single
+<br><\br>
+Sehat jasmani dan rohani
+<br><\br>
+Berkepribadian baik
+<br><\br>
+Berwawasan luas
+<br><\br>
+Mampu mengoperasikan komputer
+<br><\br>
+Berpenampilan menarik
+<br><\br>
+Mampu berbahasa inggris
+<br><\br>
+Berjiwa pemimpin
+<br><\br>
+Siap ditempatkan diseluruh wilayah Indonesia
+<br><\br>
+]]>
+        \",
+        \"applied\":false
+        }
+        </item>
+        {
+        \"title\":\"Supervisor - PT Askrindo\",
+        \"position\":\"Supervisor\",
+        \"email\":\"hrd@askrindo.com\",
+        \"address\":\"Jln Angkasa Blok B-9 Kav 8 Kota Baru, Kemayoran\",
+        \"description\":\"
+        <![CDATA[
+Persyaratan:
+<br><\br>
+Pria dan wanita
+<br><\br>
+Pendidikan minimal D3 atau S1 semua jurusan
+<br><\br>
+Ipk minimal 2,75
+<br><\br>
+Single
+<br><\br>
+Sehat jasmani dan rohani
+<br><\br>
+Berkepribadian baik
+<br><\br>
+Berwawasan luas
+<br><\br>
+Mampu mengoperasikan komputer
+<br><\br>
+Berpenampilan menarik
+<br><\br>
+Mampu berbahasa inggris
+<br><\br>
+Berjiwa pemimpin
+<br><\br>
+Siap ditempatkan diseluruh wilayah Indonesia
+<br><\br>
+]]>
+        \",
+        \"applied\":false
+        }
+        <item>
+            {
+                \"title\":\"Sekretaris direksi - PT Askrindo\",
+                \"position\":\"Sekretaris direksi\",
+                \"email\":\"hrd@askrindo.com\",
+                \"address\":\"Jln Angkasa Blok B-9 Kav 8 Kota Baru, Kemayoran\",
+                \"description\":\"
+                <![CDATA[
+        Persyaratan:
+        <br><\br>
+        Pria dan wanita
+        <br><\br>
+        Pendidikan minimal D3 atau S1 semua jurusan
+        <br><\br>
+        Ipk minimal 2,75
+        <br><\br>
+        Single
+        <br><\br>
+        Sehat jasmani dan rohani
+        <br><\br>
+        Berkepribadian baik
+        <br><\br>
+        Berwawasan luas
+        <br><\br>
+        Mampu mengoperasikan komputer
+        <br><\br>
+        Berpenampilan menarik
+        <br><\br>
+        Mampu berbahasa inggris
+        <br><\br>
+        Berjiwa pemimpin
+        <br><\br>
+        Siap ditempatkan diseluruh wilayah Indonesia
+        <br><\br>
+        ]]>
+                \",
+                \"applied\":false
+                }
         </item>
         <item>
-            {"title":"Bahrain","position":"12345","email":"a@a","address":"a","description":"b","applied":false}
+             {
+            \"title\":\"Internship Opportunity - PT Astra Otopart\",
+            \"position\":\"Internship Opportunity\",
+            \"email\":\"hrd@astra.com\",
+            \"address\":\"Jln Raya Pegangsaan Dua KM 2.2 Kelapa Gading, Jakarta Utara\",
+            \"description\":\"
+            <![CDATA[
+            Persyaratan:
+            <br><\br>
+            Pria dan wanita
+            <br><\br>
+            Pendidikan minimal SLTA sederajat
+            <br><\br>
+            Fresh graduate
+            <br><\br>
+            Menyukai bidang otomotif
+            <br><\br>
+            Berwawasan luas
+            <br><\br>
+            Mampu bekerja secara tim
+            <br><\br>
+            Berkepribadian baik
+            <br><\br>
+            Berpenampilan menarik
+            <br><\br>
+            Berwawasan luas
+            <br><\br>
+            Mamiliki kemampuan analisa yang baik
+            <br><\br>
+            Berjiwa pemimpin
+            <br><\br>
+            Mahir mengoperasikan komputer
+            <br><\br>
+            Mampu berbahasa inggris
+            <br><\br>
+            Siap ditempatkan diseluruh wilayah Indonesia
+            <br><\br>
+            ]]>
+                    \",
+                    \"applied\":false
+                    }
         </item>
         <item>
-            {"title":"Bahrain","position":"12345","email":"a@a","address":"a","description":"b","applied":false}
+            {
+            \"title\":\"Management Trainee - PT Mandiri Tunas Finance\",
+            \"position\":\"Management Trainee\",
+            \"email\":\"hrd@mandiri.com\",
+            \"address\":\"Jln Imam Bonjol No 61 Jakarta Pusat\",
+            \"description\":\"
+            <![CDATA[
+            Persyaratan:
+            <br><\br>
+            Pria dan wanita
+            <br><\br>
+            Pendidikan minimal D3 atau S1 semua jurusan
+            <br><\br>
+            IPK minimal 3,00
+            <br><\br>
+            Lulusan universitas swasta maupun negeri
+            <br><\br>
+            Sehat jasmani dan rohani
+            <br><\br>
+            Berkepribadian baik
+            <br><\br>
+            Berpenampilan menarik
+            <br><\br>
+            Berwawasan luas
+            <br><\br>
+            Memiliki kemampuan analisa yang baik
+            <br><\br>
+            Mampu bekerja dibawah tekanan
+            <br><\br>
+            Berjiwa pemimpin
+            <br><\br>
+            Mampu berbahasa inggris
+            <br><\br>
+            Komunikatif
+            <br><\br>
+            Siap ditempatkan diseluruh Indonesia
+            <br><\br>
+            ]]>
+            \",
+            \"applied\":false
+            }
         </item>
         <item>
-            {"title":"Bahrain","position":"12345","email":"a@a","address":"a","description":"b","applied":false}
+            {
+            \"title\":\"Surveyor dan Collectors - PT Asuransi Central Asia\",
+            \"position\":\"Surveyor dan Collectors\",
+            \"email\":\"hrd@aca.com\",
+            \"address\":\"Jln Letjend S Parman Kav 79 Jakarta Barat\",
+            \"description\":\"
+            <![CDATA[
+            Persyaratan:
+            <br><\br>
+            Pria atau wanita
+            <br><\br>
+            Pendidikan minimal SMA/SMK/MA
+            <br><\br>
+            Nilai rata-rata ujian 2,75
+            <br><\br>
+            Sehat jasmani dan rohani
+            <br><\br>
+            Berkepribadian baik
+            <br><\br>
+            Berpenampilan menarik
+            <br><\br>
+            Memiliki kemampuan analisa yang baik
+            <br><\br>
+            Mampu bekerja dibawah tekanan
+            <br><\br>
+            Bertanggungjawa pada tugas
+            <br><\br>
+            Mampu bekerja secara tim
+            <br><\br>
+            Mampu mengoperasikan komputer
+            <br><\br>
+            Siap ditempatkan diseluruh wilayah Indonesia
+            <br><\br>
+            ]]>
+            \",
+            \"applied\":false
+            }
         </item>
+        <item>
+            {
+            \"title\":\"Admin Marketing - PT Asuransi Sinar Mas\",
+            \"position\":\"Admin Marketing\",
+            \"email\":\"hrd@sinarmas.com\",
+            \"address\":\"Jln KH Fachrudin No 18 Tanah Abang, Jakarta Pusat\",
+            \"description\":\"
+            <![CDATA[
+            Persyaratan:
+            <br><\br>
+            Pria dan wanita
+            <br><\br>
+            Pendidikan minimal SLTA sederajat
+            <br><\br>
+            Komunikatif
+            <br><\br>
+            Jujur dan teliti
+            <br><\br>
+            Memiliki analisa yang baik
+            <br><\br>
+            Berkepribadian baik
+            <br><\br>
+            Berpenampilan menarik
+            <br><\br>
+            Berwawasan luas
+            <br><\br>
+            Mampu mengoperasikan komputer
+            <br><\br>
+            Mampu bekerja dibawah tekanan
+            <br><\br>
+            Mampu bekerja secara tim dan individu
+            <br><\br>
+            Siap ditempatkan diseluruh wilayah Indonesia
+            <br><\br>
+            ]]>
+            \",
+            \"applied\":false
+            }
+        </item>
+
     </string-array>
 </resources>

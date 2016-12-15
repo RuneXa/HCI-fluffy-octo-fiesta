@@ -5,104 +5,110 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.runexa.hci_uas.JobDescription"
-    android:id="@+id/cv_layout"
-    >
+    android:id="@+id/cv_layout">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:paddingBottom="@dimen/activity_vertical_margin"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/activity_vertical_margin">
+        android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/desc_title_PH"
-        android:text="Title"
-        android:gravity="center"
-        android:layout_margin="@dimen/activity_vertical_margin"
-        android:textSize="28sp"/>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:layout_marginBottom="@dimen/activity_vertical_margin">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Posisi Pekerjaan : "
-            android:id="@+id/desc_jobPos"
-            android:layout_marginBottom="@dimen/activity_vertical_margin"
-            />
-
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/desc_jobPos"
-            android:id="@+id/desc_jobPos_PH"
-            android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/desc_title_PH"
+                android:text="Title"
+                android:gravity="center"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:textSize="28sp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Posisi Pekerjaan : "
+                    android:id="@+id/desc_jobPos"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/desc_jobPos"
+                    android:id="@+id/desc_jobPos_PH"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"/>
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Kontak E-mail : "
-            android:id="@+id/desc_email"
-            android:layout_below="@id/desc_jobPos"
-            android:layout_toStartOf="@+id/desc_jobPos_PH"
-            android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kontak E-mail : "
+                    android:id="@+id/desc_email"
+                    android:layout_below="@id/desc_jobPos"
+                    android:layout_toStartOf="@+id/desc_jobPos_PH"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/desc_email"
-            android:layout_below="@id/desc_jobPos"
-            android:id="@+id/desc_email_PH"
-            android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/desc_email"
+                    android:layout_below="@id/desc_jobPos"
+                    android:id="@+id/desc_email_PH"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Alamat : "
-            android:id="@+id/desc_address"
-            android:layout_below="@id/desc_email"
-            android:layout_toStartOf="@+id/desc_email_PH"
-            android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat : "
+                    android:id="@+id/desc_address"
+                    android:layout_below="@id/desc_email"
+                    android:layout_toStartOf="@+id/desc_email_PH"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/desc_address"
-            android:layout_below="@id/desc_email"
-            android:id="@+id/desc_address_PH"
-            android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/desc_address"
+                    android:layout_below="@id/desc_email"
+                    android:id="@+id/desc_address_PH"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"/>
 
-    </RelativeLayout>
+            </RelativeLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/desc_desc"
-        android:text="Deskripsi : "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/desc_desc"
+                android:text="Deskripsi : "/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/desc_desc_PH"/>
-    
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Kirim CV"
-        android:id="@+id/desc_submit"
-        android:width="20dp"
-        android:height="20dp"
-        android:layout_gravity="center_horizontal"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/desc_desc_PH"/>
 
-    </LinearLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kirim CV"
+                android:id="@+id/desc_submit"
+                android:width="20dp"
+                android:height="20dp"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
 </android.support.design.widget.CoordinatorLayout>

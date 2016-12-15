@@ -1,50 +1,86 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.runexa.hci_uas.HomeFragment">
+    tools:context="com.runexa.hci_uas.HomeFragment"
+    android:orientation="vertical"
+    >
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:orientation="horizontal" >
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
 
-    <ImageView
-        android:clickable="true"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:scaleType="fitXY"
-        android:id="@+id/home_daftar"
-        android:src="@drawable/daftar_kerja_360x360"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="30dp" />
+            <ImageView
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:id="@+id/home_daftar"
+                android:src="@drawable/daftar_kerja_360x360"
+                android:layout_margin="5dp"
+                style="@style/Widget.Design.FloatingActionButton"
+                />
+        </LinearLayout>
 
-    <ImageView
-        android:clickable="true"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:scaleType="fitXY"
-        android:id="@+id/home_cv"
-        android:src="@drawable/ubah_cv_360x360"
-        android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/home_daftar"
-        />
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <ImageView
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:id="@+id/home_list"
+                android:src="@drawable/daftar_terkirim_360x360"
+                android:layout_margin="5dp" />
+        </LinearLayout>
+    </LinearLayout>
 
-    <ImageView
-        android:clickable="true"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:scaleType="fitXY"
-        android:id="@+id/home_list"
-        android:src="@drawable/daftar_terkirim_360x360"
-        android:layout_below="@+id/home_daftar"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="30dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
 
-    <ImageView
-        android:clickable="true"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:scaleType="fitXY"
-        android:id="@+id/home_option"
-        android:src="@drawable/pengaturan_360x360"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
-</RelativeLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <ImageView
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:id="@+id/home_cv"
+                android:src="@drawable/ubah_cv_360x360"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+
+</LinearLayout>

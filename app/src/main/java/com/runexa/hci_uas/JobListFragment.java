@@ -1,18 +1,16 @@
 package com.runexa.hci_uas;
 
 
-import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 
-import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
@@ -30,17 +28,17 @@ public class JobListFragment extends Fragment {
     boolean appliedOnly = false;
 
     /*
-    private mDataset[] myDataset = {
-            new mDataset("Lecturer at SU","Lecturer","aaa@aaaa.aa","Disini","Dicari....",false),
-            new mDataset("Not Lecturer at SU","Not Lecturer","aaa@aaaa.aa","Disini",null,true),
-            new mDataset("Certainly Not Lecturer at SU","Another","aaa@aaaa.aa","Disini",null,false),
-            new mDataset("Internship at ship","Ship wrecker","aaa@aaaa.aa","Disanaaaaaaaaaaaaaaaaaaaaaaaaa",null,false),
-            new mDataset("aaa","asb","aaa@aaaa.ab","Di","Lorem Ipsum",false),
-            new mDataset("bbb","asd","aaa@aaaa.ac","sini","blabalbalbalblablalba",true),
-            new mDataset("ccc","ase","aaa@aaaa.ad","isin","ballbalbalbalab",true)
+    private jobDataset[] myDataset = {
+            new jobDataset("Lecturer at SU","Lecturer","aaa@aaaa.aa","Disini","Dicari....",false),
+            new jobDataset("Not Lecturer at SU","Not Lecturer","aaa@aaaa.aa","Disini",null,true),
+            new jobDataset("Certainly Not Lecturer at SU","Another","aaa@aaaa.aa","Disini",null,false),
+            new jobDataset("Internship at ship","Ship wrecker","aaa@aaaa.aa","Disanaaaaaaaaaaaaaaaaaaaaaaaaa",null,false),
+            new jobDataset("aaa","asb","aaa@aaaa.ab","Di","Lorem Ipsum",false),
+            new jobDataset("bbb","asd","aaa@aaaa.ac","sini","blabalbalbalblablalba",true),
+            new jobDataset("ccc","ase","aaa@aaaa.ad","isin","ballbalbalbalab",true)
     };*/
 
-    ArrayList<mDataset> myDataset = new ArrayList<>();
+    ArrayList<jobDataset> myDataset = new ArrayList<>();
 
     public JobListFragment() {
         // Required empty public constructor
@@ -54,13 +52,15 @@ public class JobListFragment extends Fragment {
 
         Resources res = getResources();
         String[] str_list = res.getStringArray(R.array.Job);
-
+        Log.d("String App",str_list[0]);
         for (String s: str_list) {
+             Log.d("String :",s);
             try{
                 JSONObject data = new JSONObject(s);
-                myDataset.add(new mDataset(data.getString("title"),data.getString("position"),data.getString("email"),data.getString("address"),data.getString("description"),data.getBoolean("applied")));
+                Log.d("String :",data.getString("description"));
+                myDataset.add(new jobDataset(data.getString("title"),data.getString("position"),data.getString("email"),data.getString("address"), data.getString("description"),data.getBoolean("applied")));
             } catch (Exception e){
-                //exactly do nothing.. hueheuheue
+                Log.e("Error",e.toString());
             }
         }
 

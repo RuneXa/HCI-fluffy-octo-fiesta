@@ -4,6 +4,8 @@ import android.graphics.Color;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Html;
+import android.text.SpannableString;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -35,12 +37,12 @@ public class JobDescription extends AppCompatActivity {
         Desc = (TextView) findViewById(R.id.desc_desc_PH);
         submit = (Button) findViewById(R.id.desc_submit);
 
-        mDataset data = (mDataset) getIntent().getSerializableExtra("data");
+        jobDataset data = (jobDataset) getIntent().getSerializableExtra("data");
         Title.setText(data.title);
         Pos.setText(data.position);
         Address.setText(data.address);
         Email.setText(data.email);
-        Desc.setText(data.description);
+        Desc.setText(new SpannableString(Html.fromHtml(data.description)), TextView.BufferType.SPANNABLE);
         applied = data.applied;
 
         if(applied){

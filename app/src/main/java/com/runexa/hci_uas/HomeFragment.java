@@ -37,7 +37,6 @@ public class HomeFragment extends Fragment {
         ImageView daftar = (ImageView) v.findViewById(R.id.home_daftar);
         ImageView cv = (ImageView) v.findViewById(R.id.home_cv);
         ImageView list = (ImageView) v.findViewById(R.id.home_list);
-        ImageView pengaturan = (ImageView) v.findViewById(R.id.home_option);
 
         getFragmentManager().popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
         mCallBack = (OnHomeButtonSelected) getActivity();
@@ -73,12 +72,6 @@ public class HomeFragment extends Fragment {
             }
         });
 
-        pengaturan.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-               Toast.makeText(getContext(),"Not Implemented yet",Toast.LENGTH_SHORT).show();
-            }
-        });
         return v;
     }
 

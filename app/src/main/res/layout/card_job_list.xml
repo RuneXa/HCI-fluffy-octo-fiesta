@@ -14,63 +14,79 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <ImageView
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:id="@+id/info_image"
-            android:scaleType="fitXY"
-            android:src="@drawable/default_360x360"
-            android:layout_margin="@dimen/activity_vertical_margin"
-            />
-
-        <TextView
-            android:id="@+id/info_text_title"
-            android:layout_toEndOf="@id/info_image"
+        <RelativeLayout
+            android:layout_marginTop="@dimen/activity_vertical_margin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Judul"
-            android:gravity="center"
-            android:textSize="20sp"
-            android:layout_margin="@dimen/activity_horizontal_margin"/>
+            android:id="@+id/info_header">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:id="@+id/info_image"
+                android:scaleType="centerInside"
+                android:src="@drawable/default_360x360"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                />
+
+            <TextView
+                android:id="@+id/info_text_title"
+                android:layout_toEndOf="@id/info_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Judul"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_margin="@dimen/activity_horizontal_margin"/>
+
+        </RelativeLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/info_text"
             android:orientation="vertical"
-            android:layout_toEndOf="@id/info_image"
-            android:layout_below="@id/info_text_title"
-            android:layout_marginBottom="@dimen/activity_horizontal_margin">
+            android:layout_below="@id/info_header"
+            android:layout_margin="@dimen/activity_horizontal_margin">
 
-            <TextView
-                android:id="@+id/info_job"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Posisi Pekerjaan :"/>
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp">
+                <TextView
+                    android:id="@+id/info_job"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Posisi :"/>
 
-            <TextView
-                android:id="@+id/info_job_PH"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_marginEnd="@dimen/activity_horizontal_margin"
-                android:layout_marginStart="@dimen/activity_horizontal_margin"
-                android:text="Posisi Pekerjaan"/>
+                <TextView
+                    android:id="@+id/info_job_PH"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:text="Posisi Pekerjaan"/>
+            </LinearLayout>
 
-            <TextView
-                android:id="@+id/info_contact_email"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="E-mail :"/>
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp">
+                <TextView
+                    android:id="@+id/info_contact_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="E-mail :"/>
 
-            <TextView
-                android:id="@+id/info_contact_email_PH"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_marginEnd="@dimen/activity_horizontal_margin"
-                android:layout_marginStart="@dimen/activity_horizontal_margin"
-                android:text="Email"/>
+                <TextView
+                    android:id="@+id/info_contact_email_PH"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:text="Email"/>
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/info_contact_address"
@@ -82,8 +98,6 @@
                 android:id="@+id/info_contact_address_PH"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_marginEnd="@dimen/activity_horizontal_margin"
                 android:layout_marginStart="@dimen/activity_horizontal_margin"
                 android:text="Alamaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaat"/>
 
