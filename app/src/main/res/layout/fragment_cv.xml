@@ -22,7 +22,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/cv_text_nama"
-                android:text="Nama Lengkap"
+                android:text="Nama"
                 android:layout_below="@id/cv_text_title"
                 />
 
@@ -59,13 +59,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/activity_horizontal_margin"
-                    android:text="Laki-laki"/>
+                    android:text="Laki-laki"
+                    android:id="@+id/cv_text_gender_PH_0"/>
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/activity_horizontal_margin"
-                    android:text="Perempuan"/>
+                    android:text="Perempuan"
+                    android:id="@+id/cv_text_gender_PH_1"/>
 
             </RadioGroup>
 

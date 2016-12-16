@@ -27,7 +27,6 @@
                 android:id="@+id/home_daftar"
                 android:src="@drawable/daftar_kerja_360x360"
                 android:layout_margin="5dp"
-                style="@style/Widget.Design.FloatingActionButton"
                 />
         </LinearLayout>
 

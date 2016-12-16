@@ -17,52 +17,52 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:ems="10"
             android:maxLength="255"
             android:id="@+id/register_nama"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:hint="Nama Depan"
-            android:paddingLeft="15dp"
-            android:layout_marginTop="30dp" />
+            android:hint="Nama"
+            android:layout_marginTop="30dp"
+            android:nextFocusDown="@+id/register_email"
+            android:imeOptions="actionNext"/>
 
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
-            android:ems="10"
             android:maxLength="255"
             android:id="@+id/register_email"
             android:layout_below="@+id/register_nama"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:hint="Email"
-            android:paddingLeft="15dp" />
+            android:nextFocusDown="@+id/register_password"
+            android:imeOptions="actionNext"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
-            android:ems="10"
             android:maxLength="255"
             android:id="@+id/register_password"
             android:layout_below="@+id/register_email"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:hint="Password"
-            android:paddingLeft="15dp" />
+            android:nextFocusDown="@+id/register_confirmation"
+            android:imeOptions="actionNext"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
-            android:ems="10"
             android:maxLength="255"
             android:id="@+id/register_confirmation"
             android:layout_below="@+id/register_password"
             android:hint="Confirm Password"
-            android:paddingLeft="15dp"
+            android:nextFocusDown="@+id/register_button"
+            android:imeOptions="actionDone"
             />
 
         <Button
@@ -102,6 +102,7 @@
                 android:layout_alignTop="@+id/register_text_login"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
+                android:textColor="@color/primary"
                 />
 
         </RelativeLayout>
