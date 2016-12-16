@@ -4,23 +4,93 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
-    <string name="title_activity_maps">Map</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_login">Sign in</string>
 
-    <!-- Strings related to login -->
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password (optional)</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="error_invalid_email">This email address is invalid</string>
-    <string name="error_invalid_password">This password is too short</string>
-    <string name="error_incorrect_password">This password is incorrect</string>
-    <string name="error_field_required">This field is required</string>
-    <string name="permission_rationale">"Contacts permissions are needed for providing email
-        completions."
-    </string>
     <string name="app_name">PAPER - Pencari Pekerjaan</string>
+
+    <string name="help1">
+        1:\n
+        Slide gambar mengenai app ini (PAPER).\n\n
+        2:\n
+        Tombol untuk masuk ke halaman login app ini.\n\n
+        3:\n
+        Untuk masuk ke halaman sign up untuk mendaftar bagi pengguna baru.\n
+    </string>
+    <string name="help2">
+        1:\n
+        Field untuk memasukan email yang telah terdaftar dan password untuk mengakses account yang terdaftar.\n\n
+        2:\n
+        Tombol untuk masuk ke halaman utama setelah memasukan email dan password dengan benar.\n\n
+        3:\n
+        Tombol masuk ke halaman sign up untuk mendaftar bagi pengguna baru.\n
+    </string>
+    <string name="help3">
+        1:\n
+        Field untuk memasukan data untuk account yang akan dibuat (Nama, email, password, dan password lagi untuk memastikan)\n\n
+        2:\n
+        Tombol untuk mendaftar setelah mengisi field-field yang tersedia.\n\n
+        3:\n
+        Tombol untuk masuk ke halaman log in bagi pengguna yang sudah memiliki account.\n
+    </string>
+    <string name="help4">
+        1:\n
+        Menu Navigasi\n\n
+        2:\n
+        Tombol untuk membuka menu pilihan kategori pekerjaan.\n\n
+        3:\n
+        Tombol untuk membuka halaman membuat CV yang akan dikirmkan untuk melamar pekerjaan.\n\n
+        4:\n
+        Tombol untuk membuka halaman untuk melihat Perusahaan yang sudah kita kirimkan CV/lamar.\n\n
+        5:\n
+        Tombol untuk membuka halaman bantuan.\n
+    </string>
+    <string name="help5">
+        1:\n
+        Menu Navigasi\n\n
+        2:\n
+        Tombol untuk memilih kategori pekerjaan yang ingin dicari.\n
+    </string>
+    <string name="help6">
+        1:\n
+        Menu Navigasi\n\n
+        2:\n
+        Pilihan untuk lowongan-lowongan yang tersedia, beserta penjelasan singkat mengenai setiap lowongan tersebut.\n\n
+        3:\n
+        Gambar atau logo dari perusahaan yang menyediakan pekerjaan.\n
+    </string>
+    <string name="help7">
+        1:\n
+        Pilihan menu navigasi untuk kembali ke halaman utama app ini.\n\n
+        2:\n
+        Pilihan menu navigasi untuk ke halaman cari pekerjaan.\n\n
+        3:\n
+        Pilihan menu navigasi untuk menuju ke halaman membuat CV.\n\n
+        4:\n
+        Pilihan menu navigasi untuk menuju ke halaman untuk melihat pekerjaan yang telah kita lamar.\n\n
+        5:\n
+        Pilihan menu navigasi untuk mengakses bantuan untuk membantu pengguna yang memiliki masalah dalam menggunakan app ini.\n\n
+        6:\n
+        Pilihan menu navigasi untuk keluar dan kembali ke halaman awal app ini.\n
+    </string>
+    <string name="help8">
+        1:\n
+        Tombol untuk kembali ke halaman menu pilihan pekerjaan yang tersedia.\n\n
+        2:\n
+        Informasi detail mengenai pekerjaan yang tersedia.\n\n
+        3:\n
+        Tombol untuk mengirim CV yang telah dibuat sebelumnya.\n
+    </string>
+    <string name="help9">
+        1:\n
+        Menu navigasi\n\n
+        2:\n
+        Field untuk mengisi nama lengkap dari user.\n\n
+        3:\n
+        Pilihan untuk memilih jenis kelamin yang akan tertera di CV.\n\n
+        4:\n
+        Field untuk mengisi informasi lebih lengkap mengenai user.\n
+    </string>
 </resources>
