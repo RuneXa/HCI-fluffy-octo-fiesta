@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_cv) {
             fm.beginTransaction().replace(frame,new CVFragment()).addToBackStack(null).commit();
         } else if (id == R.id.nav_help) {
-            Toast.makeText(this,"Not Implemented",Toast.LENGTH_SHORT).show();
+            fm.beginTransaction().replace(frame,new BantuanFragment()).addToBackStack(null).commit();
         } else if (id == R.id.nav_logout) {
             Intent intent = new Intent(this, StartActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
