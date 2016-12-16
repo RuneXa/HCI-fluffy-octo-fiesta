@@ -6,6 +6,57 @@
     android:orientation="vertical"
     >
 
+    <ImageView
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:id="@+id/home_daftar"
+        android:src="@drawable/daftar_kerja_1280x360"
+        />
+
+    <ImageView
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:id="@+id/home_list"
+        android:src="@drawable/daftar_terkirim_1280x360" />
+
+    <ImageView
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:id="@+id/home_cv"
+        android:src="@drawable/cv_1280x360"
+        />
+
+    <ImageView
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:id="@+id/home_help"
+        android:src="@drawable/bantuan_1280x360"
+        />
+    <!--
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -81,5 +132,5 @@
             android:orientation="vertical" />
 
     </LinearLayout>
-
+ -->
 </LinearLayout>

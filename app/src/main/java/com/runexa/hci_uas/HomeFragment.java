@@ -2,6 +2,7 @@ package com.runexa.hci_uas;
 
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -37,6 +38,7 @@ public class HomeFragment extends Fragment {
         ImageView daftar = (ImageView) v.findViewById(R.id.home_daftar);
         ImageView cv = (ImageView) v.findViewById(R.id.home_cv);
         ImageView list = (ImageView) v.findViewById(R.id.home_list);
+        ImageView help = (ImageView) v.findViewById(R.id.home_help);
 
         getFragmentManager().popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
         mCallBack = (OnHomeButtonSelected) getActivity();
@@ -69,6 +71,14 @@ public class HomeFragment extends Fragment {
                 f.setArguments(bundl);
                 getFragmentManager().beginTransaction().replace(frame.getId(),f).addToBackStack(null).commit();
                 mCallBack.OnButtonSelected(3);
+            }
+        });
+
+        help.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getFragmentManager().beginTransaction().replace(frame.getId(),new BantuanFragment()).addToBackStack(null).commit();
+                mCallBack.OnButtonSelected(4);
             }
         });
 

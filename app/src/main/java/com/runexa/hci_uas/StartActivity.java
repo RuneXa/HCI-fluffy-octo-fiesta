@@ -18,8 +18,9 @@ public class StartActivity extends AppCompatActivity {
 
 
     int[] mResources = {
-            R.drawable.ic_menu_camera,
-            R.drawable.ic_menu_camera,
+            R.drawable.front_pict_1_720x720,
+            R.drawable.front_pict_2_720x720,
+            R.drawable.front_pict_3_720x720,
     };
 
     static int NUM_PAGES = 0;
@@ -117,7 +118,7 @@ public class StartActivity extends AppCompatActivity {
 
         @Override
         public void destroyItem(ViewGroup container, int position, Object object) {
-            container.removeView((LinearLayout) object);
+            container.removeView((View) object);
         }
     }
 
